@@ -1,0 +1,518 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(34, 0, 82);
+  box-sizing: border-box;
+  font-family: "Belanosima", sans-serif;
+  transition: 0.5s;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.topMenu {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.middleMenu {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.brightnessSwitch {
+  margin-top: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: aliceblue;
+  border-radius: 100%;
+  line-height: 50px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  background-color: blueviolet;
+  border: 2px solid white;
+  align-self: center;
+  transition: 0.5s;
+}
+.name {
+  background-color: white;
+  height: 60px;
+  margin-top: 15px;
+  width: 100%;
+  font-size: 34px;
+  border-radius: 20px;
+  background-color: blueviolet;
+  color: white;
+  transition: 0.5s;
+  text-align: center;
+}
+.myName {
+  padding-left: 12px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.subject {
+  width: 30%;
+  height: 300px;
+  background-color: rgb(242, 226, 255);
+
+  margin-left: 2.5%;
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  position: relative;
+  justify-content: center;
+  transition: 0.5s;
+}
+.subjects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 300px;
+  background-color: rgb(242, 226, 255);
+  margin-left: 2.5%;
+  margin-top: 70px;
+  flex-direction: column;
+  border-radius: 30px;
+  position: relative;
+  transition: 0.5s;
+  flex-wrap: wrap;
+}
+.subjects div {
+  margin-top: 10px;
+  font-size: 21px;
+}
+
+img {
+  width: 100%;
+}
+
+.title {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 60%);
+  font-size: 25px;
+  color: white;
+  background-color: blueviolet;
+  width: 60%;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.speed {
+  transition: 0.2s;
+}
+.NameSpeed {
+  transition: 0.1s;
+  line-height: 60px;
+}
+
+.react {
+  width: 60%;
+  height: 75%;
+}
+.js {
+  width: 90%;
+  margin-bottom: 17px;
+  height: 85%;
+}
+.htmlandcss {
+  height: 120%;
+}
+.fa-linkedin {
+  font-size: 200px;
+  transition: 1s;
+}
+.fa-star {
+  margin-left: 5px;
+  color: rgb(221, 148, 1);
+  transition: 0.5s;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+.me {
+  font-size: 17px;
+  text-align: justify;
+  padding: 10px;
+}
+.prog {
+  margin-bottom: 30px;
+}
+.title:hover {
+  cursor: pointer;
+}
+.brightnessSwitch:hover {
+  cursor: pointer;
+}
+.BackArrow {
+  position: fixed;
+  font-size: 70px;
+  width: 60px;
+  height: 60px;
+  left: 1%;
+  top: 4%;
+  color: white;
+}
+.title_no_hover:hover {
+  cursor: default;
+}
+.HTMLsubject {
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+}
+
+.AdvStars {
+  margin-top: 20px;
+  font-size: 40px;
+}
+
+.advancement {
+  font-size: 45px;
+  transition: 0.5s;
+}
+.backgroungImage {
+  height: 100%;
+  width: 100.2%;
+  position: absolute;
+  border-radius: 30px;
+  z-index: -1;
+  opacity: 0.4;
+}
+.me {
+  width: 100%;
+  border-radius: 30px;
+
+  height: 100%;
+  background-image: url(img/whyme.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.commingSoon {
+  height: 70%;
+  width: 50%;
+  opacity: 1;
+}
+.hello {
+  letter-spacing: 3px;
+}
+.icon {
+  height: 62px;
+  width: 62px;
+  opacity: 0.4;
+  transition: 1s;
+}
+.IconHolder {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.IconText {
+  font-size: 10px;
+}
+.subjects .IconText {
+  font-size: 11px;
+}
+.icon:hover {
+  opacity: 1;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.keyboardEfect {
+  opacity: 0;
+  transition: 0.1s;
+  position: relative;
+  bottom: 5px;
+}
+.keyboardEfect.active {
+  opacity: 1;
+}
+img {
+  transition: 1s;
+}
+span.speed {
+  display: block;
+}
+.speed.animation {
+  animation: shake 2s linear infinite;
+}
+.speed.animation:hover {
+  cursor: pointer;
+}
+
+
+@media (max-width: 1700px) {
+  .react {
+    width: 60%;
+    height: 65%;
+  }
+  .js {
+    width: 90%;
+    margin-bottom: 17px;
+    height: 65%;
+  }
+  .htmlandcss {
+    height: 100%;
+  }
+}
+@media (max-width: 1400px) {
+  .react {
+    width: 60%;
+    height: 55%;
+  }
+  .js {
+    width: 90%;
+    margin-bottom: 17px;
+    height: 60%;
+  }
+  .htmlandcss {
+    height: 90%;
+  }
+  .NameSpeed {
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+  .speed {
+    font-size: 20px;
+  }
+  .fa-linkedin {
+    font-size: 150px;
+  }
+  .me {
+    font-size: 14px;
+  }
+  .icon {
+    height: 40px;
+    width: 40px;
+  }
+}
+@media (max-width: 1200px) {
+  .react {
+    width: 60%;
+    height: 40%;
+  }
+  .js {
+    width: 90%;
+    margin-bottom: 17px;
+    height: 45%;
+  }
+  .htmlandcss {
+    height: 75%;
+  }
+  .NameSpeed {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .speed {
+    font-size: 15px;
+  }
+  .fa-star {
+    font-size: 25px;
+  }
+  .advancement {
+    font-size: 30px;
+  }
+}
+@media (max-width: 1000px) {
+  .NameSpeed {
+    font-size: 13px;
+  }
+  .keyboardEfect {
+    bottom: 2px;
+  }
+}
+
+@media (orientation: portrait) {
+  .subject {
+    width: 65%;
+  }
+  .subjects {
+    display: none;
+  }
+
+  .speed {
+    font-size: 20px;
+  }
+  .NameSpeed {
+    line-height: 30px;
+    font-size: 22px;
+    margin-top: 5px;
+  }
+
+  .middleMenu {
+    justify-content: center;
+    align-items: center;
+  }
+  .react {
+    width: 55%;
+    height: 60%;
+  }
+  .js {
+    width: 75%;
+    margin-bottom: 17px;
+    height: 65%;
+  }
+  .htmlandcss {
+    height: 90%;
+    width: 80%;
+  }
+  .IconText {
+    display: none;
+  }
+  
+  .fa-linkedin {
+    font-size: 200px;
+  }
+  .name {
+    height: 75px;
+  }
+  .hello {
+    display: block;
+    font-size: 17px;
+  }
+
+  .keyboardEfect {
+    display: none;
+  }
+  .fa-star {
+    font-size: 35px;
+  }
+  .advancement {
+    font-size: 45px;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 770px) {
+  .react {
+    height: 60%;
+    width: 65%;
+  }
+  .js {
+    height: 70%;
+    width: 80%;
+  }
+  .htmlandcss {
+    height: 90%;
+    width: 80%;
+  }
+}
+@media (orientation: portrait) and (max-width: 620px) {
+  .subject,
+  .subjects {
+    width: 80%;
+  }
+  .react {
+    height: 55%;
+    width: 60%;
+  }
+  .htmlandcss {
+    height: 80%;
+    width: 80%;
+  }
+
+  .js {
+    height: 60%;
+  }
+
+  .NameSpeed {
+    font-size: 15px;
+  }
+  .hello {
+    font-size: 12px;
+  }
+}
+@media (orientation: portrait) and (max-width: 490px) {
+  .react {
+    height: 55%;
+    width: 65%;
+  }
+  .htmlandcss {
+    height: 80%;
+    width: 100%;
+  }
+  .js {
+    height: 60%;
+    width: 100%;
+  }
+
+  .speed {
+    font-size: 15px;
+  }
+  .hello {
+    letter-spacing: 1px;
+  }
+  .icon {
+    height: 50px;
+    width: 50px;
+  }
+  .fa-linkedin {
+    font-size: 120px;
+  }
+  .fa-star {
+    font-size: 25px;
+  }
+  .advancement {
+    font-size: 30px;
+  }
+}
+@media (orientation: portrait) and (max-width: 400px) {
+  .react {
+    height: 50%;
+    width: 65%;
+  }
+  .htmlandcss {
+    height: 60%;
+    width: 90%;
+  }
+  .js {
+    height: 50%;
+    width: 100%;
+  }
+
+  .speed {
+    font-size: 12px;
+  }
+  .hello {
+    letter-spacing: 1px;
+  }
+  .icon {
+    height: 30px;
+    width: 30px;
+  }
+}
+@keyframes shake {
+  49% {
+    margin-left: 0%;
+  }
+  50% {
+    margin-left: 10px;
+  }
+  53% {
+    margin-left: -10px;
+  }
+  56% {
+    margin-left: 10px;
+  }
+  59% {
+    margin-left: -10px;
+  }
+  60% {
+    margin-left: 0%;
+  }
+}
