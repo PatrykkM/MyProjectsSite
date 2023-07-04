@@ -138,7 +138,7 @@ img {
   width: 100%;
   border-radius: 35px;
   height: 100%;
-  background-image: url(/img/whyme.jpg);
+  background-image: url(img/whyme.jpg);
   background-size: cover;
   background-position: center;
   transition: 0.5s;
@@ -173,7 +173,7 @@ span.speed {
   width: 100%;
   border-radius: 35px;
   height: 100%;
-  background-image: url(/img/random.jpg);
+  background-image: url(img/random.jpg);
   background-size: cover;
   background-position: center;
   transition: 0.5s;

@@ -11,8 +11,8 @@ const RandomProjectIMG = document.querySelector(`.RandomProject`);
 const meIMG = document.querySelector(`.me`);
 const TitleRandom = document.querySelector(`.random`);
 HTMLS = [
-  "../HTML&CSS-PROJECTS/HTML$CSS_SITES/www/Cv.html",
-  "../JsProjects/RockPapperScissors/index.html",
+  "HTML&CSS-PROJECTS/HTML&CSS-PROJECTS.html",
+  "JsProjects/RockPapperScissors/index.html",
 ];
 
 let flaga = false;
