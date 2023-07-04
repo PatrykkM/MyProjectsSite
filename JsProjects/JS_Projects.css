@@ -1,0 +1,334 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(34, 0, 82);
+  box-sizing: border-box;
+  font-family: "Belanosima", sans-serif;
+  transition: 0.5s;
+  min-width: 300px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.topMenu {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.middleMenu {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.brightnessSwitch {
+  margin-top: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: aliceblue;
+  border-radius: 100%;
+  line-height: 50px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  background-color: blueviolet;
+  border: 2px solid white;
+  align-self: center;
+  transition: 0.5s;
+}
+.myName {
+  padding-left: 12px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.name {
+  background-color: white;
+  height: 60px;
+  margin-top: 15px;
+  width: 100%;
+  font-size: 34px;
+  border-radius: 20px;
+  background-color: blueviolet;
+  color: white;
+  transition: 0.5s;
+  text-align: center;
+}
+.whiteBG{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  border-radius: 35px;
+  z-index: -1;
+}
+.subject {
+  width: 30%;
+  height: 300px;
+  background-color: transparent;
+  margin-left: 2.5%;
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  border-radius: 35px;
+  position: relative;
+  justify-content: center;
+  transition: 0.5s;
+}
+.subject:last-child {
+  background-color: transparent;
+}
+
+img {
+  transition: 0.5s;
+}
+
+.title {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-size: 25px;
+  color: white;
+  background-color: blueviolet;
+  width: 60%;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 35px;
+  transition: 0.5s;
+  z-index: 1;
+}
+.speed {
+  transition: 0.2s;
+}
+.NameSpeed {
+  transition: 0.1s;
+  line-height: 60px;
+}
+i {
+  transition: 0.5s;
+}
+.fa-star {
+  margin-left: 5px;
+  color: rgb(221, 148, 1);
+  transition: 0.5s;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  opacity: 1;
+  z-index: 9999;
+}
+.title:hover {
+  cursor: pointer;
+}
+.brightnessSwitch:hover {
+  cursor: pointer;
+}
+.HTMLsubject {
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+}
+.AdvStars {
+  margin-top: 20px;
+  font-size: 40px;
+}
+.advancement {
+  font-size: 45px;
+  transition: 0.5s;
+  z-index: 1;
+}
+span.speed {
+  display: block;
+}
+.speed.animation {
+  animation: shake 2s linear infinite;
+}
+.speed.animation:hover {
+  cursor: pointer;
+}
+.GameRPS {
+  width: 100%;
+  border-radius: 35px;
+  height: 100%;
+  background-image: url(../img/GameRockPapper.png);
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s;
+  position: absolute;
+  opacity: 0.6;
+}
+.GameOneArmBandit{
+  width: 100%;
+  border-radius: 35px;
+  height: 100%;
+  background-image: url(../img/JednoRękiBandtyaGAME.png);
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s;
+  position: absolute;
+  opacity: 0.6;
+}
+.WorkInProgresImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 35px;
+  background-image: url(../img/WorkInProgres.png);
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s;
+  position: absolute;
+  z-index: 1;
+}
+a.block {
+  text-decoration: none;
+  text-align: none;
+  color: white;
+  display: block;
+}
+.AboutMe {
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+}
+
+
+@media (max-width: 1400px) {
+
+  .speed {
+    font-size: 20px;
+  }
+
+  .me {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1200px) {
+
+  .speed {
+    font-size: 15px;
+  }
+  .fa-star {
+    font-size: 25px;
+  }
+  .advancement {
+    font-size: 30px;
+  }
+}
+@media (max-width: 864px) {
+  .speed {
+    font-size: 10px;
+  }
+  .fa-star {
+    font-size: 15px;
+  }
+  .advancement {
+    font-size: 20px;
+  }
+}
+@media (max-width: 598px){
+  .speed {
+    font-size: 7px;
+  }
+}
+@media (orientation: portrait) {
+  .subject {
+    width: 65%;
+  }
+  .speed {
+    font-size: 20px;
+  }
+  .NameSpeed {
+    line-height: 30px;
+    font-size: 22px;
+    margin-top: 5px;
+  }
+
+  .middleMenu {
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .name {
+    height: 75px;
+  }
+  .hello {
+    display: block;
+    font-size: 17px;
+  }
+
+  .keyboardEfect {
+    display: none;
+  }
+  .fa-star {
+    font-size: 35px;
+  }
+  .advancement {
+    font-size: 45px;
+  }
+}
+
+
+@media (orientation: portrait) and (max-width: 620px) {
+  .subject {
+    width: 80%;
+  }
+
+  .NameSpeed {
+    font-size: 15px;
+  }
+  .hello {
+    font-size: 12px;
+  }
+}
+@media (orientation: portrait) and (max-width: 490px) {
+  .speed {
+    font-size: 17px;
+  }
+  .hello {
+    letter-spacing: 1px;
+  }
+  .fa-star {
+    font-size: 25px;
+  }
+  .advancement {
+    font-size: 30px;
+  }
+}
+@media (orientation: portrait) and (max-width: 400px) {
+
+  .speed {
+    font-size: 13px;
+  }
+  .hello {
+    letter-spacing: 1px;
+  }
+}
+@keyframes shake {
+  49% {
+    margin-left: 0%;
+  }
+  50% {
+    margin-left: 10px;
+  }
+  53% {
+    margin-left: -10px;
+  }
+  56% {
+    margin-left: 10px;
+  }
+  59% {
+    margin-left: -10px;
+  }
+  60% {
+    margin-left: 0%;
+  }
+}

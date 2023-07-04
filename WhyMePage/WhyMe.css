@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(34, 0, 82);
+  box-sizing: border-box;
+  font-family: "Belanosima", sans-serif;
+  transition: 0.5s;
+  min-width: 300px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.topMenu {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.middleMenu {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.brightnessSwitch {
+  margin-top: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: aliceblue;
+  border-radius: 100%;
+  line-height: 50px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  background-color: blueviolet;
+  border: 2px solid white;
+  align-self: center;
+  transition: 0.5s;
+}
+.name {
+  background-color: white;
+  height: 60px;
+  margin-top: 15px;
+  width: 100%;
+  font-size: 34px;
+  border-radius: 20px;
+  background-color: blueviolet;
+  color: white;
+  transition: 0.5s;
+  text-align: center;
+}
+.subject {
+  width: 30%;
+  height: 300px;
+  background-color: rgb(242, 226, 255);
+  margin-left: 2.5%;
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  border-radius: 35px;
+  position: relative;
+  justify-content: center;
+  transition: 0.5s;
+}
+.title {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-size: 25px;
+  color: white;
+  background-color: blueviolet;
+  width: 60%;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 35px;
+  transition: 0.5s;
+  z-index: 1;
+}
+.speed {
+  transition: 0.2s;
+}
+.NameSpeed {
+  transition: 0.1s;
+  line-height: 60px;
+}
+
+.react {
+  width: 60%;
+  height: 75%;
+}
+.title:hover {
+  cursor: pointer;
+}
+.brightnessSwitch:hover {
+  cursor: pointer;
+}
+.HTMLsubject {
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+}
+.speed.animation {
+  animation: shake 2s linear infinite;
+}
+.speed.animation:hover {
+  cursor: pointer;
+}
+
+.AboutMe {
+  text-align: center;
+  font-size: 20px;
+  transition: 0.5s;
+  transform: translateX(-100%);
+  padding: 25px;
+  transition: 0.3s;
+}
+.hidden {
+  overflow: hidden;
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1360px) {
+
+  .speed {
+    font-size: 20px;
+  }
+  .me {
+    font-size: 14px;
+  }
+  .AboutMe {
+    font-size: 17px;
+  }
+}
+@media (max-width: 1200px) {
+  .speed {
+    font-size: 17px;
+  }
+}
+@media (max-width: 1084px){
+  .AboutMe {
+    font-size: 15px;
+  }
+}
+@media (max-width: 836px){
+  .AboutMe {
+    font-size: 10px;
+  }
+  .speed {
+    font-size: 12px;
+  }
+}
+
+
+@media (orientation: portrait) {
+  .NameSpeed {
+    line-height: 30px;
+    font-size: 22px;
+    margin-top: 5px;
+  }
+  .subject {
+    width: 65%;
+  }
+  .AboutMe {
+    font-size: 20px;
+  }
+  .speed {
+    font-size: 20px;
+  }
+
+  .middleMenu {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .name {
+    height: 75px;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 620px) {
+  .subject {
+    width: 80%;
+  }
+
+  .NameSpeed {
+    font-size: 15px;
+  }
+  .hello {
+    font-size: 12px;
+  }
+}
+@media (orientation: portrait) and (max-width: 490px) {
+  .speed {
+    font-size: 20px;
+  }
+  .hello {
+    letter-spacing: 1px;
+  }
+  .AboutMe {
+    font-size: 17px;
+  }
+}
+@media (orientation: portrait) and (max-width: 420px) {
+  .subject {
+    width: 90%;
+  }
+  .AboutMe {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .speed {
+    font-size: 17px;
+  }
+  .hello {
+    letter-spacing: 1px;
+  }
+}
+@keyframes shake {
+  49% {
+    margin-left: 0%;
+  }
+  50% {
+    margin-left: 10px;
+  }
+  53% {
+    margin-left: -10px;
+  }
+  56% {
+    margin-left: 10px;
+  }
+  59% {
+    margin-left: -10px;
+  }
+  60% {
+    margin-left: 0%;
+  }
+}
